@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "797505227734",
-    "project_id": "login-331815",
-    "storage_bucket": "login-331815.appspot.com"
+    "project_number": "664809870132",
+    "project_id": "logindiemdanh-426a8",
+    "storage_bucket": "logindiemdanh-426a8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:797505227734:android:7ba0ea396a29b29db13277",
+        "mobilesdk_app_id": "1:664809870132:android:9a463acbf563ecbe44cb61",
         "android_client_info": {
           "package_name": "com.hoangviet.diemdanh"
         }
       },
       "oauth_client": [
         {
-          "client_id": "797505227734-uacndbgoaaa267hvc7h821jn5cno3tie.apps.googleusercontent.com",
+          "client_id": "664809870132-124t5ej6afb9r7m7cg9u6nallm6r22fc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.hoangviet.diemdanh",
-            "certificate_hash": "d09dd0f3e8432edf396f114c0311319e3bad70c2"
+            "certificate_hash": "8c5d5cab6b1a57436d70ddeaa793ffe4ccd6659c"
           }
         },
         {
-          "client_id": "797505227734-f5sj4a5jneb6d67gqfgrp5q198c7civg.apps.googleusercontent.com",
+          "client_id": "664809870132-ufij604p2ltbm6arrsmeqlhhv1qcl1c7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDNojb_bYFtVgFJMXscgPmELpIUrZQ2agU"
+          "current_key": "AIzaSyAPotJ-Rq7biEeRCfz_iTaAERjo_rF1Fzk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "797505227734-f5sj4a5jneb6d67gqfgrp5q198c7civg.apps.googleusercontent.com",
+              "client_id": "664809870132-ufij604p2ltbm6arrsmeqlhhv1qcl1c7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

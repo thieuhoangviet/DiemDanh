@@ -7,18 +7,48 @@
     android:orientation="vertical"
     tools:context=".Fragments.HomeFragment">
     <LinearLayout
-        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avtarGG"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_avatar"
+            android:layout_gravity="center_horizontal">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tên"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:id="@+id/tenGG"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnb1"
+            android:id="@+id/btnDanhsach"
             android:layout_width="143dp"
             android:layout_height="136dp"
-            android:layout_marginLeft="27dp"
+            android:layout_marginLeft="45dp"
             android:background="@drawable/botron_button"
-            android:text="Button">
+            android:text="Danh sách"
+            >
 
         </androidx.appcompat.widget.AppCompatButton>
 
@@ -26,8 +56,33 @@
             android:layout_width="143dp"
             android:layout_height="136dp"
             android:layout_marginLeft="50dp"
+            android:id="@+id/btnDiemDanh"
             android:background="@drawable/botron_button"
-            android:text="Button">
+            android:text="Điểm danh">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnThongke"
+            android:layout_width="143dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/botron_button"
+            android:text="Thống kê">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="143dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnXoa"
+            android:background="@drawable/botron_buttonxoa"
+            android:text="Xóa dữ liệu">
 
         </androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
