@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -20,5 +21,11 @@ public class DanhSachActivity extends AppCompatActivity {
         setContentView(R.layout.activity_danh_sach);
 
 
+    }
+
+    public void xulydslop(View view) {startActivity(new Intent(DanhSachActivity.this,DanhSachLop.class));
+    }
+
+    public void xulydshs(View view) {startActivity(new Intent(DanhSachActivity.this,DanhSachHS.class));
     }
 }

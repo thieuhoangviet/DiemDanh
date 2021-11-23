@@ -23,7 +23,7 @@ import com.hoangviet.diemdanh.R;
 
 
 public class CanhanFragment extends Fragment {
-    ImageView avtGG;
+    ImageView avtGG,avtLogout;
     TextView tenMail,ten;
     Button btnDangXuat;
     FirebaseAuth firebaseAuth;
@@ -34,6 +34,7 @@ public class CanhanFragment extends Fragment {
         // Inflate the layout for this fragment
          View view=inflater.inflate(R.layout.fragment_canhan, container, false);
          avtGG=view.findViewById(R.id.avtGG);
+         avtLogout=view.findViewById(R.id.avtLogout);
          tenMail=view.findViewById(R.id.tenMail);
          ten=view.findViewById(R.id.ten);
          btnDangXuat=view.findViewById(R.id.btnDangxuat);
@@ -53,6 +54,13 @@ public class CanhanFragment extends Fragment {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent=new Intent(view.getContext(), LoginActivity.class);
                 startActivity(intent);
+            }
+        });
+        avtLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(view.getContext(),LoginActivity.class));
             }
         });
 
