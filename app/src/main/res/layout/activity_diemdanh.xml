@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiemdanhActivity">
+
+
+    <EditText
+        android:id="@+id/edtNhapmaQR"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Nhập tên môn học để tạo mã"
+        android:inputType="textPersonName" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo"
+        android:id="@+id/btnTaoQR"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/botron_linear"/>
+
+    <ImageView
+        android:id="@+id/imgMaQR"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quét mã QR"
+        android:id="@+id/btnScanQR"
+        android:onClick="xulyQuetma"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/botron_linear"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThongkeActivity">
+
+    <EditText
+        android:id="@+id/edtTim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập ngày"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <EditText
+        android:id="@+id/edtTimLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nhập tên lớp học"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/lvThongke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

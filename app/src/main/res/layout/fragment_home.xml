@@ -23,8 +23,7 @@
             android:layout_width="285dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,7 +35,7 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="230dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -45,17 +44,16 @@
             android:id="@+id/btnDanhsach"
             android:layout_width="143dp"
             android:layout_height="136dp"
-            android:layout_marginLeft="45dp"
+            android:layout_marginLeft="35dp"
             android:background="@drawable/botron_button"
-            android:text="Danh sách"
-            >
+            android:text="Danh sách">
 
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="143dp"
             android:layout_height="136dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
             android:id="@+id/btnDiemDanh"
             android:background="@drawable/botron_button"
             android:text="Điểm danh">
@@ -66,23 +64,15 @@
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnThongke"
             android:layout_width="143dp"
             android:layout_height="136dp"
-            android:layout_marginLeft="45dp"
+
             android:background="@drawable/botron_button"
             android:text="Thống kê">
-
-        </androidx.appcompat.widget.AppCompatButton>
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="143dp"
-            android:layout_height="136dp"
-            android:layout_marginLeft="50dp"
-            android:id="@+id/btnXoa"
-            android:background="@drawable/botron_buttonxoa"
-            android:text="Xóa dữ liệu">
 
         </androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>

@@ -3,8 +3,50 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_main.xml" value="0.12183383991894631" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/drawable/botron.xml" value="0.2449074074074074" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/drawable/botron_linear.xml" value="0.15046296296296297" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_danh_sach.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_danh_sach_hs.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_danh_sach_lop.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_detail_dshs.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_diemdanh.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_infor.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_login.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_main.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_maps.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/activity_scan.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/fragment_canhan.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/fragment_home.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/fragment_thong_bao.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/list_dsdd.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/list_dshs.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/layout/list_dslop.xml" value="0.2273148148148148" />
+        <entry key="..\:/DiemDanh/DiemDanh/app/src/main/res/menu/menu_navigation.xml" value="0.264" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron.xml" value="0.23333333333333334" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_button.xml" value="0.1300925925925926" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_buttondiemdanh.xml" value="0.1300925925925926" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_buttonxoa.xml" value="0.23333333333333334" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_gradient_diemdanh.xml" value="0.1300925925925926" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_gradient_thongke.xml" value="0.1300925925925926" />
+        <entry key="..\:/DiemDanh/app/src/main/res/drawable/botron_linear.xml" value="0.12777777777777777" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_danh_sach.xml" value="0.16799999999999998" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_danh_sach_hs.xml" value="0.264" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_danh_sach_lop.xml" value="0.264" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_detail_dshs.xml" value="0.2" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_diemdanh.xml" value="0.2222222222222222" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_infor.xml" value="0.2222222222222222" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_login.xml" value="0.12360688956433637" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_main.xml" value="0.144" />
         <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_profile.xml" value="0.12183383991894631" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_scan.xml" value="0.264" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/activity_thongke.xml" value="0.2222222222222222" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/fragment_canhan.xml" value="0.2" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/fragment_home.xml" value="0.144" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/fragment_thong_bao.xml" value="0.13020833333333334" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/list_dsdd.xml" value="0.4" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/list_dshs.xml" value="0.264" />
+        <entry key="..\:/DiemDanh/app/src/main/res/layout/list_dslop.xml" value="0.2222222222222222" />
+        <entry key="..\:/DiemDanh/app/src/main/res/menu/menu_navigation.xml" value="0.13020833333333334" />
       </map>
     </option>
   </component>

@@ -7,7 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListAdapter;
@@ -34,12 +37,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DanhSachHS extends AppCompatActivity {
-EditText eMSSV,eHoten,eKhoa,eLop;
-Button btnThem, btnSua, btnXoa;
+public class DanhSachHS extends AppCompatActivity implements AdapterView.OnItemClickListener {
+EditText eMSSV,eHoten,eKhoa,eLop,edtSearch;
+Button btnThem;
 ProgressDialog progressDialog;
 ListView listView;
-ListAdapter listAdapter;
+SimpleAdapter listAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,30 +55,24 @@ ListAdapter listAdapter;
         eHoten=findViewById(R.id.edtHoten);
         eKhoa=findViewById(R.id.edtKhoa);
         eLop=findViewById(R.id.edtLop);
+        edtSearch=findViewById(R.id.edtSearch);
 
         btnThem=findViewById(R.id.btnThem);
-        btnSua=findViewById(R.id.btnSua);
-        btnXoa=findViewById(R.id.btnXoaHS);
+
         progressDialog=new ProgressDialog(DanhSachHS.this);
         progressDialog.setMessage("Loading...");
 
-        btnThem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                themHocSinh();
-                progressDialog.show();
-            }
-        });
-        btnXoa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                eMSSV.setText("");
-                eHoten.setText("");
-                eKhoa.setText("");
-                eLop.setText("");
-            }
-        });
+    btnThem.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            themHocSinh();
+            progressDialog.show();
+        }
+    });
+
+
         listView=findViewById(R.id.lv_DanhSachHS);
+        listView.setOnItemClickListener(this);
         getDSHS();
     }
 
@@ -128,6 +125,22 @@ ListAdapter listAdapter;
                 new String[]{"MSSV","HoTen","Khoa","Lop"},new int[]{R.id.txtMSSV,R.id.txtHoTen,R.id.txtKhoa,R.id.txtLop});
         listView.setAdapter(listAdapter);
         progressDialog.hide();
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                DanhSachHS.this.listAdapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
 
@@ -169,4 +182,24 @@ ListAdapter listAdapter;
 
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent=new Intent(this,DetailDSHS.class);
+        HashMap<String,String>map=(HashMap)parent.getItemAtPosition(position);
+        String MSSV=map.get("MSSV").toString();
+        String HoTen=map.get("HoTen").toString();
+        String Khoa=map.get("Khoa").toString();
+        String Lop=map.get("Lop").toString();
+
+        intent.putExtra("MSSV",MSSV);
+        intent.putExtra("HoTen",HoTen);
+        intent.putExtra("Khoa",Khoa);
+        intent.putExtra("Lop",Lop);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }

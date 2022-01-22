@@ -19,11 +19,14 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.hoangviet.diemdanh.DanhSachActivity;
+import com.hoangviet.diemdanh.DiemdanhActivity;
+import com.hoangviet.diemdanh.InforActivity;
 import com.hoangviet.diemdanh.R;
+import com.hoangviet.diemdanh.ThongkeActivity;
 
 
 public class HomeFragment extends Fragment {
-    Button btnDanhSach;
+    Button btnDanhSach,btnDiemDanh,btnThongke;
     ImageView avatar;
     TextView Ten;
     FirebaseAuth firebaseAuth;
@@ -34,8 +37,15 @@ public class HomeFragment extends Fragment {
 
          View view=inflater.inflate(R.layout.fragment_home, container, false);
          btnDanhSach=view.findViewById(R.id.btnDanhsach);
+         btnDiemDanh=view.findViewById(R.id.btnDiemDanh);
+         btnThongke=view.findViewById(R.id.btnThongke);
          avatar=view.findViewById(R.id.avtarGG);
-
+         avatar.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 startActivity(new Intent(view.getContext(), InforActivity.class));
+             }
+         });
          Ten=view.findViewById(R.id.tenGG);
         firebaseAuth=FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
@@ -55,6 +65,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity().getApplication(), DanhSachActivity.class));
+            }
+        });
+        btnDiemDanh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              startActivity(new Intent(getActivity().getApplication(), DiemdanhActivity.class));
+            }
+        });
+        btnThongke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity().getApplication(), ThongkeActivity.class));
             }
         });
     }

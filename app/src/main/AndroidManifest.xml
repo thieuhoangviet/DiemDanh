@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hoangviet.diemdanh">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -12,25 +14,46 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DiemDanh">
         <activity
+            android:name=".ThongkeActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".InforActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ScanActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DiemdanhActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailDSHS"
+            android:exported="true"
+            android:parentActivityName=".DanhSachHS"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
             android:name=".DanhSachHS"
             android:exported="true"
-            android:parentActivityName=".DanhSachActivity"/>
+            android:parentActivityName=".DanhSachActivity" />
         <activity
             android:name=".DanhSachLop"
             android:exported="true"
-            android:parentActivityName=".DanhSachActivity"/>
+            android:parentActivityName=".DanhSachActivity" />
         <activity
             android:name=".DanhSachActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -45,7 +68,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

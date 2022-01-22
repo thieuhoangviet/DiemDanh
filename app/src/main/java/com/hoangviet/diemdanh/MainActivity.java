@@ -38,10 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 case  R.id.canhan:
                     viewPager.setCurrentItem(2);
                     break;
-
-
             }
-
             return true;
         });
         AdapterFragment adapterFragment=new AdapterFragment(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
@@ -69,14 +66,10 @@ public class MainActivity extends AppCompatActivity {
                         bottomNavigationView.getMenu().findItem(R.id.canhan).setChecked(true);
                         break;
 
-
-
                 }
             }
-
             @Override
             public void onPageScrollStateChanged(int state) {
-
             }
         });
     }

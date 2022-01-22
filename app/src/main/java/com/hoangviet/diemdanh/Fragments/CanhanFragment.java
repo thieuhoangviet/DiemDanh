@@ -18,6 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.hoangviet.diemdanh.InforActivity;
 import com.hoangviet.diemdanh.LoginActivity;
 import com.hoangviet.diemdanh.R;
 
@@ -25,12 +26,13 @@ import com.hoangviet.diemdanh.R;
 public class CanhanFragment extends Fragment {
     ImageView avtGG,avtLogout;
     TextView tenMail,ten;
-    Button btnDangXuat;
+    Button btnDangXuat,btnThongtin;
     FirebaseAuth firebaseAuth;
     GoogleSignInClient googleSignInClient;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
          View view=inflater.inflate(R.layout.fragment_canhan, container, false);
          avtGG=view.findViewById(R.id.avtGG);
@@ -38,7 +40,10 @@ public class CanhanFragment extends Fragment {
          tenMail=view.findViewById(R.id.tenMail);
          ten=view.findViewById(R.id.ten);
          btnDangXuat=view.findViewById(R.id.btnDangxuat);
+        btnThongtin=view.findViewById(R.id.btnThongtin);
          firebaseAuth=FirebaseAuth.getInstance();
+
+
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         GoogleSignInAccount signInAccount= GoogleSignIn.getLastSignedInAccount(view.getContext());
         if (firebaseUser != null){
@@ -63,8 +68,20 @@ public class CanhanFragment extends Fragment {
                 startActivity(new Intent(view.getContext(),LoginActivity.class));
             }
         });
-
+        avtGG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            startActivity(new Intent(view.getContext(), InforActivity.class))   ;
+            }
+        });
+        btnThongtin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(view.getContext(), InforActivity.class));
+            }
+        });
          return view;
+
     }
 
 }

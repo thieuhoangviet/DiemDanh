@@ -7,44 +7,32 @@
     android:orientation="vertical"
     tools:context=".DanhSachHS">
 
-    <TextView
-        android:id="@+id/textView4"
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtSearch"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Chọn Khoa" />
-
-    <Spinner
-        android:id="@+id/spinKhoa"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Chọn lớp" />
-
-    <Spinner
-        android:id="@+id/spinLop"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Tìm kiếm"
+        android:inputType="textPersonName" />
 
     <ListView
         android:id="@+id/lv_DanhSachHS"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="351dp"
+        android:layout_marginTop="20dp">
 
     </ListView>
 <LinearLayout
     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
     android:layout_height="wrap_content">
     <TextView
         android:id="@+id/textView9"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:textSize="18dp"
+        android:textColor="@color/black"
         android:text="MSSV: " />
 
     <EditText
@@ -64,6 +52,7 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textSize="18dp"
+            android:textColor="@color/black"
             android:text="Họ tên: " />
 
         <EditText
@@ -72,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+
             android:inputType="textPersonName" />
 
     </LinearLayout>
@@ -83,6 +73,7 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textSize="18dp"
+            android:textColor="@color/black"
             android:text="Khoa: " />
 
         <EditText
@@ -102,6 +93,7 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textSize="18dp"
+            android:textColor="@color/black"
             android:text="Lớp: " />
 
         <EditText
@@ -118,20 +110,11 @@
     android:layout_height="wrap_content">
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnThem"
+        android:background="@drawable/botron_linear"
         android:layout_width="wrap_content"
+        android:layout_marginLeft="160dp"
         android:layout_height="wrap_content"
         android:text="Thêm học sinh" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSua"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:text="Sửa " />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnXoaHS"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:text="Xóa" />
 </LinearLayout>
 </LinearLayout>

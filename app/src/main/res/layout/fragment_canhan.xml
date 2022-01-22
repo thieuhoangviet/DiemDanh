@@ -21,11 +21,10 @@
         </de.hdodenhof.circleimageview.CircleImageView>
 
         <LinearLayout
-            android:layout_width="285dp"
+            android:layout_width="275dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mã điểm danh"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"/>
@@ -71,12 +71,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/botron"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnThongtin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botron"
-            android:text="Thông tin cá nhân"></androidx.appcompat.widget.AppCompatButton>
+            android:text="Thông tin cá nhân"
+            android:textSize="20sp">
+        </androidx.appcompat.widget.AppCompatButton>
 
     </LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
@@ -86,5 +91,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="400dp"
         android:background="@drawable/botron"
-        android:text="Đăng xuất"></androidx.appcompat.widget.AppCompatButton>
+        android:text="Đăng xuất"
+        android:textSize="24sp">
+    </androidx.appcompat.widget.AppCompatButton>
 </LinearLayout>
